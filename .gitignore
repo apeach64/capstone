@@ -1,0 +1,25 @@
+# See https:sensor/sensor/help.github.comsensor/articlessensor/ignoring-filessensor/ for more about ignoring files.
+
+# dependencies
+sensor/node_modules
+sensor/.pnp
+sensor/.pnp.js
+
+# testing
+sensor/coverage
+
+# production
+sensor/build
+
+# misc
+sensor/.DS_Store
+sensor/.env.local
+sensor/.env.development.local
+sensor/.env.test.local
+sensor/.env.production.local
+
+sensor/npm-debug.log*
+sensor/yarn-debug.log*
+sensor/yarn-error.log*
+
+.vscode
