@@ -9,8 +9,8 @@ function App() {
   useEffect(()=>{
     const loop = setInterval(()=>{
       axios.get('http://ec2-3-83-65-82.compute-1.amazonaws.com:8080/api/sensor').then((data) => {
-	const json_data = JSON.parse(data.data);
-	console.log(json_data.data);
+	const json_data = data.data;
+	console.log(json_data);
         setSensorText(json_data.data);
     })
     },500);
