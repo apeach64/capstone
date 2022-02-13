@@ -4,8 +4,8 @@ from flask_restx import Resource, Api, Namespace
 import json
 SensorRoute = Namespace('sensor')
 sensor = {
-    'data': "",
-    'time': ""
+    "data": "",
+    "time": ""
 }
 
 @SensorRoute.route('api/sensor')
