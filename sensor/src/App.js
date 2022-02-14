@@ -10,7 +10,7 @@ function App() {
     const loop = setInterval(()=>{
       axios.get('http://ec2-3-84-249-77.compute-1.amazonaws.com:8080/api/sensor').then((data) => {
 	//axios로 get을 하는 경우 불러오는 데이터를 자동으로 json형태로 변환하여 얻어 JSON.parse를 사용하여 변환 X
-	const json_data = data.data;
+	const json_data = JSON.parse(data.data);
 	console.log(json_data);
         setSensorText(json_data.data);
     })
